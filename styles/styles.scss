@@ -66,7 +66,7 @@ main {
       padding: 1rem;
       // margin: 0.5rem 0;
       &::placeholder {
-        color: $Blue;
+        color: $Dark-Blue;
         font-weight: bold;
         font-family: $font;
       }
@@ -124,11 +124,11 @@ main {
 }
 
 .form-control input.error {
-  border: 3px solid $Red;
+  border: 2px solid $Red;
 }
 
 .form-control input.success {
-  border: 3px solid $Green;
+  border: 1px solid $Green;
 }
 
 // Desktop-specific styles
@@ -148,4 +148,9 @@ main {
       }
     }
   }
+}
+
+#kumar {
+  text-decoration: none;
+  color: white;
 }
