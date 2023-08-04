@@ -125,10 +125,16 @@ main {
   // Adjust layout, font sizes, spacing, etc. for desktop view
   body {
     background: url(../images/bg-intro-desktop.png), $Red; // Replace with your desired image URL
+
     main {
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      .intro {
+        h1 {
+          font-size: 3rem;
+        }
+      }
     }
   }
 }

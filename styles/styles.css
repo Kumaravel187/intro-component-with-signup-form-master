@@ -121,4 +121,7 @@ main section {
     justify-content: center;
     align-items: center;
   }
+  body main .intro h1 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
