@@ -69,6 +69,9 @@ main section {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
+.form-wrapper .form input:focus {
+  outline: none;
+}
 .form-wrapper .form button {
   width: 100%;
   padding: 1rem;
@@ -110,6 +113,14 @@ main section {
   font-weight: bold;
   font-size: 0.5rem;
   visibility: hidden;
+}
+
+.form-control input.error {
+  border: 3px solid hsl(0, 100%, 74%);
+}
+
+.form-control input.success {
+  border: 3px solid hsl(154, 59%, 51%);
 }
 
 @media (min-width: 768px) {
