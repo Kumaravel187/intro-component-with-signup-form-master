@@ -58,7 +58,6 @@ main section {
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
   padding: 1rem;
-  margin: 0.5rem 0;
 }
 .form-wrapper .form input::-moz-placeholder {
   color: hsl(248, 32%, 49%);
@@ -72,7 +71,6 @@ main section {
 }
 .form-wrapper .form button {
   width: 100%;
-  margin: 0.5rem 0;
   padding: 1rem;
   font-family: "Poppins", sans-serif;
   background-color: hsl(154, 59%, 51%);
@@ -85,17 +83,33 @@ main section {
   letter-spacing: 0.5px;
   font-weight: 500;
 }
-.form-wrapper .form small {
+.form-wrapper .form p {
   display: block;
   text-align: center;
   margin: 1rem 0;
   font-size: 1rem;
   color: hsl(246, 25%, 77%);
 }
-.form-wrapper .form small a {
+.form-wrapper .form p a {
   text-decoration: none;
   color: hsl(0, 100%, 74%);
   font-weight: bold;
+}
+
+.form-control {
+  margin: 1rem 0;
+  padding: 0 0 1rem 0;
+  text-align: right;
+  position: relative;
+}
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+  font-size: 0.5rem;
+  visibility: hidden;
 }
 
 @media (min-width: 768px) {

@@ -64,7 +64,7 @@ main {
       border: 1px solid $Grayish-Blue;
       border-radius: 5px;
       padding: 1rem;
-      margin: 0.5rem 0;
+      // margin: 0.5rem 0;
       &::placeholder {
         color: $Blue;
         font-weight: bold;
@@ -73,7 +73,7 @@ main {
     }
     button {
       width: 100%;
-      margin: 0.5rem 0;
+      // margin: 2rem;
       padding: 1rem;
       font-family: $font;
       background-color: $Green;
@@ -86,7 +86,7 @@ main {
       letter-spacing: 0.5px;
       font-weight: 500;
     }
-    small {
+    p {
       display: block;
       text-align: center;
       margin: 1rem 0;
@@ -98,6 +98,25 @@ main {
         font-weight: bold;
       }
     }
+  }
+}
+
+.form-control {
+  // margin: 1rem 1rem 0 1rem;
+  margin: 1rem 0;
+  padding: 0 0 1rem 0;
+  // border: 1px solid black;
+  text-align: right;
+  position: relative;
+  small {
+    // visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: $Red;
+    font-weight: bold;
+    font-size: 0.5rem;
+    visibility: hidden;
   }
 }
 
