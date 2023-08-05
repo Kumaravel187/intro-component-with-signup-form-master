@@ -41,10 +41,7 @@ function checkRequiredField(inputElArray) {
   inputElArray.forEach(function (inputEl) {
     if (inputEl.value.trim() === "") {
       // Show error message if input is empty
-      showErrorMessage(
-        inputEl,
-        `Please type in your ${getInputElName(inputEl)}`
-      );
+      showErrorMessage(inputEl, `${getInputElName(inputEl)} cannot be empty!`);
     } else {
       // Show success message if input is filled
       showSuccessMessage(inputEl);
