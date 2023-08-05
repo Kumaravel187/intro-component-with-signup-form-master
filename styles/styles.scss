@@ -1,82 +1,103 @@
-@import "./variables";
-// Import base styles
+@import "./variables"; // Import variable definitions for styling
 
+/* Import base styles */
+
+/* Reset default margin, padding, and box-sizing for all elements */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Styling for the body element */
 body {
+  /* Set background image and color for the body */
   background: url(../images/bg-intro-mobile.png), $Red;
-  font-family: $font;
-  font-size: $baseFont;
+  font-family: $font; /* Use the defined font family */
+  font-size: $baseFont; /* Use the defined base font size */
   min-height: 100vh;
   padding: 3rem 2rem;
 }
 
+/* Styling for the main content container */
 main {
   display: flex;
   flex-direction: column;
-  // border: 1px solid black;
+
+  /* Styling for sections within the main content */
   section {
-    // border: 1px solid green;
     width: 100%;
     padding: 2rem 1rem;
   }
 }
 
+/* Styling for the introduction section */
 .intro {
   text-align: center;
   color: $White;
+
+  /* Styling for the heading within the introduction section */
   h1 {
     font-size: 2rem;
     line-height: 1.2;
   }
+
+  /* Styling for paragraphs within the introduction section */
   p {
-    //   border: 1px solid white;
     margin: 1.5rem 1rem 0rem 1rem;
     font-size: 1.2rem;
   }
 }
 
+/* Styling for the form wrapper section */
 .form-wrapper {
+  /* Styling for the container within the form wrapper */
   .container {
     text-align: center;
     padding: 1rem 4rem;
     font-size: 1.2rem;
-    // border: 1px solid $White;
     background-color: $Blue;
     color: $White;
     border-radius: 15px;
+
+    /* Styling for bold text within the container */
     span {
       font-weight: bold;
     }
   }
+
+  /* Styling for the form within the form wrapper */
   .form {
     border: 1px solid $White;
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 15px;
     background-color: $White;
+
+    /* Styling for input fields within the form */
     input {
+      /* Set input width and styling */
       width: 100%;
       border: 1px solid $Grayish-Blue;
       border-radius: 5px;
       padding: 1rem;
-      // margin: 0.5rem 0;
+
+      /* Styling for placeholder text */
       &::placeholder {
         color: $Dark-Blue;
         font-weight: bold;
         font-family: $font;
       }
+
       &:focus {
-        outline: none;
+        outline: none; /* Remove default focus outline */
       }
     }
+
+    /* Styling for the submit button */
     button {
+      /* Set button width and styling */
       width: 100%;
-      // margin: 2rem;
       padding: 1rem;
       font-family: $font;
       background-color: $Green;
@@ -89,12 +110,16 @@ main {
       letter-spacing: 0.5px;
       font-weight: 500;
     }
+
+    /* Styling for additional text within the form */
     p {
       display: block;
       text-align: center;
       margin: 1rem 0;
       font-size: 1rem;
       color: $Grayish-Blue;
+
+      /* Styling for links within the paragraph */
       a {
         text-decoration: none;
         color: $Red;
@@ -104,15 +129,15 @@ main {
   }
 }
 
+/* Styling for form control elements */
 .form-control {
-  // margin: 1rem 1rem 0 1rem;
   margin: 1rem 0;
   padding: 0 0 1rem 0;
-  // border: 1px solid black;
   text-align: right;
   position: relative;
+
+  /* Styling for error messages */
   small {
-    // visibility: hidden;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -123,17 +148,19 @@ main {
   }
 }
 
+/* Styling for input elements with error class */
 .form-control input.error {
   border: 2px solid $Red;
 }
 
+/* Styling for input elements with success class */
 .form-control input.success {
-  border: 1px solid $Green;
+  border: 2px solid $Green;
 }
 
-// Desktop-specific styles
+/* Desktop-specific styles using media query */
 @media (min-width: 768px) {
-  // Adjust layout, font sizes, spacing, etc. for desktop view
+  /* Adjust layout, font sizes, spacing, etc. for desktop view */
   body {
     background: url(../images/bg-intro-desktop.png), $Red; // Replace with your desired image URL
 
@@ -141,6 +168,8 @@ main {
       flex-direction: row;
       justify-content: center;
       align-items: center;
+
+      /* Styling for the introduction section in desktop view */
       .intro {
         h1 {
           font-size: 3rem;
@@ -150,6 +179,7 @@ main {
   }
 }
 
+/* Styling for specific link with ID "kumar" */
 #kumar {
   text-decoration: none;
   color: white;

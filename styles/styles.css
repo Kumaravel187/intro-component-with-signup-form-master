@@ -1,30 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* Import base styles */
+/* Reset default margin, padding, and box-sizing for all elements */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Styling for the body element */
 body {
+  /* Set background image and color for the body */
   background: url(../images/bg-intro-mobile.png), hsl(0, 100%, 74%);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif; /* Use the defined font family */
+  font-size: 16px; /* Use the defined base font size */
   min-height: 100vh;
   padding: 3rem 2rem;
 }
 
+/* Styling for the main content container */
 main {
   display: flex;
   flex-direction: column;
+  /* Styling for sections within the main content */
 }
 main section {
   width: 100%;
   padding: 2rem 1rem;
 }
 
+/* Styling for the introduction section */
 .intro {
   text-align: center;
   color: whitesmoke;
+  /* Styling for the heading within the introduction section */
+  /* Styling for paragraphs within the introduction section */
 }
 .intro h1 {
   font-size: 2rem;
@@ -35,6 +44,11 @@ main section {
   font-size: 1.2rem;
 }
 
+/* Styling for the form wrapper section */
+.form-wrapper {
+  /* Styling for the container within the form wrapper */
+  /* Styling for the form within the form wrapper */
+}
 .form-wrapper .container {
   text-align: center;
   padding: 1rem 4rem;
@@ -42,6 +56,7 @@ main section {
   background-color: hsl(248, 32%, 49%);
   color: whitesmoke;
   border-radius: 15px;
+  /* Styling for bold text within the container */
 }
 .form-wrapper .container span {
   font-weight: bold;
@@ -52,12 +67,17 @@ main section {
   padding: 1rem;
   border-radius: 15px;
   background-color: whitesmoke;
+  /* Styling for input fields within the form */
+  /* Styling for the submit button */
+  /* Styling for additional text within the form */
 }
 .form-wrapper .form input {
+  /* Set input width and styling */
   width: 100%;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
   padding: 1rem;
+  /* Styling for placeholder text */
 }
 .form-wrapper .form input::-moz-placeholder {
   color: hsl(249, 10%, 26%);
@@ -70,9 +90,10 @@ main section {
   font-family: "Poppins", sans-serif;
 }
 .form-wrapper .form input:focus {
-  outline: none;
+  outline: none; /* Remove default focus outline */
 }
 .form-wrapper .form button {
+  /* Set button width and styling */
   width: 100%;
   padding: 1rem;
   font-family: "Poppins", sans-serif;
@@ -92,6 +113,7 @@ main section {
   margin: 1rem 0;
   font-size: 1rem;
   color: hsl(246, 25%, 77%);
+  /* Styling for links within the paragraph */
 }
 .form-wrapper .form p a {
   text-decoration: none;
@@ -99,11 +121,13 @@ main section {
   font-weight: bold;
 }
 
+/* Styling for form control elements */
 .form-control {
   margin: 1rem 0;
   padding: 0 0 1rem 0;
   text-align: right;
   position: relative;
+  /* Styling for error messages */
 }
 .form-control small {
   position: absolute;
@@ -115,15 +139,19 @@ main section {
   visibility: hidden;
 }
 
+/* Styling for input elements with error class */
 .form-control input.error {
   border: 2px solid hsl(0, 100%, 74%);
 }
 
+/* Styling for input elements with success class */
 .form-control input.success {
-  border: 1px solid hsl(154, 59%, 51%);
+  border: 2px solid hsl(154, 59%, 51%);
 }
 
+/* Desktop-specific styles using media query */
 @media (min-width: 768px) {
+  /* Adjust layout, font sizes, spacing, etc. for desktop view */
   body {
     background: url(../images/bg-intro-desktop.png), hsl(0, 100%, 74%);
   }
@@ -131,11 +159,13 @@ main section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* Styling for the introduction section in desktop view */
   }
   body main .intro h1 {
     font-size: 3rem;
   }
 }
+/* Styling for specific link with ID "kumar" */
 #kumar {
   text-decoration: none;
   color: white;

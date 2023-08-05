@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Set character encoding and viewport for responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
+    <!-- Favicon for the browser tab -->
     <link
       rel="icon"
       type="image/png"
@@ -12,31 +13,44 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- Page title displayed in the browser tab -->
     <title>Frontend Mentor | Intro component with sign up form</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Internal stylesheet for custom styles -->
     <style>
       .attribution { font-size: 11px; text-align: center; }
       .attribution a { color: hsl(228, 45%, 44%); }
     </style>
+
+    <!-- External stylesheet for additional styles -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <!-- Main content of the webpage -->
     <main>
+      <!-- Introduction section -->
       <section class="intro">
+        <!-- Main heading -->
         <h1>Learn to code by watching others</h1>
+        <!-- Paragraph describing the benefits of real-time problem solving -->
         <p>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </section>
+
+      <!-- Sign-up form section -->
       <section class="form-wrapper">
         <div class="container">
+          <!-- Information about the trial period and pricing -->
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </div>
+        <!-- Form for user sign-up -->
         <form id="form" class="form">
+          <!-- Container for form controls -->
           <div class="form-container">
+            <!-- Input field for first name -->
             <div class="form-control">
               <input
                 type="text"
@@ -44,8 +58,10 @@
                 id="firstName"
                 placeholder="First Name"
               />
+              <!-- Placeholder for displaying input validation messages -->
               <small class="input-message"></small>
             </div>
+            <!-- Input field for last name -->
             <div class="form-control">
               <input
                 type="text"
@@ -55,6 +71,7 @@
               />
               <small class="input-message"></small>
             </div>
+            <!-- Input field for email address -->
             <div class="form-control">
               <input
                 type="email"
@@ -64,6 +81,7 @@
               />
               <small class="input-message"></small>
             </div>
+            <!-- Input field for password -->
             <div class="form-control">
               <input
                 type="password"
@@ -73,8 +91,10 @@
               />
               <small class="input-message"></small>
             </div>
+            <!-- Button for submitting the form -->
             <div class="form-control">
               <button type="submit">Claim your free trial</button>
+              <!-- Disclaimer about terms and services -->
               <p>
                 By clicking the button, you are agreeing to our
                 <a href="#">Terms and Services</a>
@@ -85,7 +105,9 @@
       </section>
     </main>
 
+    <!-- Footer section -->
     <footer>
+      <!-- Attribution for the challenge and author -->
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -93,6 +115,8 @@
         >. Coded by <a id="kumar" href="#">Kumaravel Poong</a>.
       </p>
     </footer>
+
+    <!-- JavaScript file for functionality -->
     <script src="./app.js"></script>
   </body>
 </html>
