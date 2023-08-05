@@ -18,10 +18,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop view](image.png =200px)
-![Desktop view with form validation failed](image-1.png =200px)
-![Desktop view with form validation passed](image-2.png =200px)
-![Mobile view](image-3.png =200px)
+<img src="image.png" alt="Desktop view" width="200"/>
+<img src="image-1.png" alt="Desktop view with form validation failed" width="200"/>
+<img src="image-2.png" alt="Desktop view with form validation passed" width="200"/>
+<img src="image-3.png" alt="Mobile view" width="200"/>
 
 ### Links
 
