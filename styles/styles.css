@@ -56,6 +56,7 @@ main section {
   background-color: hsl(248, 32%, 49%);
   color: whitesmoke;
   border-radius: 15px;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
   /* Styling for bold text within the container */
 }
 .form-wrapper .container span {
@@ -67,6 +68,7 @@ main section {
   padding: 1rem;
   border-radius: 15px;
   background-color: whitesmoke;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
   /* Styling for input fields within the form */
   /* Styling for the submit button */
   /* Styling for additional text within the form */
@@ -106,6 +108,11 @@ main section {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 500;
+  transition: 0.2s ease-in;
+}
+.form-wrapper .form button:hover {
+  transform: translateY(-5px);
+  background-color: hsl(154, 59%, 41%);
 }
 .form-wrapper .form p {
   display: block;
