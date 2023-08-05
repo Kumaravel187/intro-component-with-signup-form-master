@@ -64,4 +64,4 @@ I was not sure on how to add an svg image, in the placeholder section while it i
 
 ### Useful resources
 
-- [Example resource 1](https://www.udemy.com/course/web-projects-with-vanilla-javascript/) - This helped me for building the javascript form login. The instructor explain key steps in using functions to not repeat if else statements. Email validation is also taught in his course.
+- [Resource 1](https://www.udemy.com/course/web-projects-with-vanilla-javascript/) - This helped me for building the javascript form login. The instructor explain key steps in using functions to not repeat if else statements. Email validation is also taught in his course.
