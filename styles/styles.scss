@@ -27,7 +27,8 @@ main {
   /* Styling for sections within the main content */
   section {
     width: 100%;
-    padding: 2rem 1rem;
+    // padding: 2rem 1rem;
+    margin: 0 auto;
   }
 }
 
@@ -44,7 +45,7 @@ main {
 
   /* Styling for paragraphs within the introduction section */
   p {
-    margin: 1.5rem 1rem 0rem 1rem;
+    margin: 1.5rem 1rem 1rem 1rem;
     font-size: 1.2rem;
   }
 }
@@ -108,7 +109,7 @@ main {
       font-family: $font;
       background-color: $Green;
       color: $White;
-      font-size: 1.5rem;
+      font-size: 1rem;
       cursor: pointer;
       border: none;
       border-radius: 5px;
@@ -179,6 +180,9 @@ main {
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      section {
+        margin: 4rem;
+      }
 
       /* Styling for the introduction section in desktop view */
       .intro {

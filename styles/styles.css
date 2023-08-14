@@ -25,7 +25,7 @@ main {
 }
 main section {
   width: 100%;
-  padding: 2rem 1rem;
+  margin: 0 auto;
 }
 
 /* Styling for the introduction section */
@@ -40,7 +40,7 @@ main section {
   line-height: 1.2;
 }
 .intro p {
-  margin: 1.5rem 1rem 0rem 1rem;
+  margin: 1.5rem 1rem 1rem 1rem;
   font-size: 1.2rem;
 }
 
@@ -101,7 +101,7 @@ main section {
   font-family: "Poppins", sans-serif;
   background-color: hsl(154, 59%, 51%);
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -167,6 +167,9 @@ main section {
     justify-content: center;
     align-items: center;
     /* Styling for the introduction section in desktop view */
+  }
+  body main section {
+    margin: 4rem;
   }
   body main .intro h1 {
     font-size: 3rem;
